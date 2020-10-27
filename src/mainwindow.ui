@@ -17,7 +17,11 @@
    <string notr="true">background-color: rgb(163, 231, 220);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout_2"/>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout"/>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
