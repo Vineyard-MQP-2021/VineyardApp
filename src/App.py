@@ -17,7 +17,7 @@ class MainWindow(QMainWindow):
         self.show()
 
     def displayDateTime(self):
-        self.datetime.setText(datetime.date.today().strftime("%A %b. %d"))# + "    " + time.strftime("%H:%M"))
+        self.datetime.setText(datetime.date.today().strftime("%A %b. %d").upper())# + "    " + time.strftime("%H:%M"))
 
 app = QApplication(sys.argv)
 window = MainWindow()
