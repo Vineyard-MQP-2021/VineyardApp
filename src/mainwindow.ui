@@ -22,8 +22,8 @@
      <rect>
       <x>40</x>
       <y>40</y>
-      <width>591</width>
-      <height>431</height>
+      <width>641</width>
+      <height>481</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout" stretch="4,1">
@@ -54,7 +54,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QFrame" name="camerafeed">
+        <widget class="QFrame" name="frame">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(22, 33, 132);</string>
          </property>
