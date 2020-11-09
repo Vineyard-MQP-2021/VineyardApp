@@ -10,6 +10,8 @@ from PyQt5.QtCore import QTimer
 class MainWindow(QMainWindow):
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
+        self.setFixedHeight(1000)
+        self.setFixedWidth(1200)
         uic.loadUi('mainwindow.ui', self)
         timer = QTimer(self)
         timer.timeout.connect(self.displayDateTime)
@@ -17,8 +19,10 @@ class MainWindow(QMainWindow):
         self.show()
 
     def displayDateTime(self):
-        self.datetime.setText(datetime.date.today().strftime("%A %b. %d").upper())# + "    " + time.strftime("%H:%M"))
+        self.date.setText(datetime.date.today().strftime("%A %b. %d").upper())
+        self.time.setText(time.strftime("%H:%M"))
 
 app = QApplication(sys.argv)
 window = MainWindow()
+
 app.exec()

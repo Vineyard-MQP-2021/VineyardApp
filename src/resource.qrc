@@ -1,0 +1,10 @@
+<RCC>
+    <qresource>
+        <file alis="hawk1.png">images/hawk1.png</file>
+        <file alis="hawk2.png">images/hawk2.png</file>
+        <file alis="bird1.png">images/bird1.png</file>
+        <file alis="bird2.png">images/bird2.png</file>
+        <file alis="hawk2.1.png">images/hawk2.png</file>
+        <file alis="hawk1.1.png">images/hawk1.1.png</file>
+    </qresource>
+</RCC>

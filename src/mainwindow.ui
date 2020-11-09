@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>865</width>
-    <height>598</height>
+    <width>1200</width>
+    <height>1000</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,147 +17,326 @@
    <string notr="true">background-color: rgb(163, 231, 220);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="hawk1">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>200</y>
+      <width>141</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 164, 165);
+border: 3px solid #1d54a3;
+color: white;
+border-radius: 35px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>images/hawk1.1.png</normaloff>images/hawk1.1.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>140</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hawk2">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>360</y>
+      <width>141</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 164, 165);
+border: 3px solid #1d54a3;
+border-radius: 35px;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>images/hawk2.1.png</normaloff>images/hawk2.1.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>140</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bird1">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>530</y>
+      <width>141</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 164, 165);
+border: 3px solid #1d54a3;
+border-radius: 35px;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>images/bird1.png</normaloff>images/bird1.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>140</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="bird2">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>690</y>
+      <width>141</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 164, 165);
+border: 3px solid #1d54a3;
+border-radius: 35px;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>images/bird2.png</normaloff>images/bird2.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>140</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>140</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(22, 33, 132);</string>
+    </property>
+    <property name="text">
+     <string>Alert Sounds</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>40</y>
-      <width>641</width>
-      <height>481</height>
+      <x>48</x>
+      <y>48</y>
+      <width>761</width>
+      <height>931</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout" stretch="4,1">
+    <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <layout class="QVBoxLayout" name="feedLayout">
-       <item>
-        <widget class="QLabel" name="datetime">
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>60</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>20</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(22, 33, 132);</string>
-         </property>
-         <property name="text">
-          <string>TextLabel</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignHCenter|Qt::AlignTop</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QFrame" name="frame">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(22, 33, 132);</string>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="camerafeedLabel">
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(22, 33, 132);</string>
-         </property>
-         <property name="text">
-          <string>Camera Feed #1</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignHCenter|Qt::AlignTop</set>
-         </property>
-        </widget>
-       </item>
-      </layout>
+      <widget class="QLabel" name="date">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(22, 33, 132);</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignHCenter|Qt::AlignTop</set>
+       </property>
+      </widget>
      </item>
      <item>
-      <layout class="QVBoxLayout" name="soundButtonLayout">
-       <property name="spacing">
-        <number>0</number>
+      <widget class="QLabel" name="time">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
        </property>
-       <property name="topMargin">
-        <number>10</number>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(22, 33, 132);</string>
        </property>
-       <item>
-        <widget class="QPushButton" name="hawk1">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(85, 164, 165);
-border: 3px solid #1d54a3;
-border-radius: 10px;
-color: white;</string>
-         </property>
-         <property name="text">
-          <string>Hawk 1</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="hawk2">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(85, 164, 165);
-border: 3px solid #1d54a3;
-border-radius: 10px;
-color: white;</string>
-         </property>
-         <property name="text">
-          <string>Hawk 2</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="bird1">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(85, 164, 165);
-border: 3px solid #1d54a3;
-border-radius: 10px;
-color: white;</string>
-         </property>
-         <property name="text">
-          <string>Bird 1</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="bird2">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(85, 164, 165);
-border: 3px solid #1d54a3;
-border-radius: 10px;
-color: white;</string>
-         </property>
-         <property name="text">
-          <string>Bird 2</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignHCenter|Qt::AlignTop</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>709</width>
+         <height>657</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(22, 33, 132);
+border-radius: 20px;</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(22, 33, 132);</string>
+       </property>
+       <property name="text">
+        <string>Connection Status:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignHCenter|Qt::AlignTop</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="connectionstatus">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(204, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Not Connected!</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignHCenter|Qt::AlignTop</set>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>
