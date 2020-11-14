@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -9,6 +12,12 @@
     <width>1200</width>
     <height>1000</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>Vineyard Monitoring App</string>
@@ -46,7 +55,7 @@ border-radius: 35px;</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>images/hawk1.png</normaloff>images/hawk1.png</iconset>
+      <normaloff>../res/images/hawk1.png</normaloff>../res/images/hawk1.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -84,7 +93,7 @@ color: white;</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>images/hawk2.png</normaloff>images/hawk2.png</iconset>
+      <normaloff>../res/images/hawk2.png</normaloff>../res/images/hawk2.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -122,7 +131,7 @@ color: white;</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>images/bird1.png</normaloff>images/bird1.png</iconset>
+      <normaloff>../res/images/bird1.png</normaloff>../res/images/bird1.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -160,7 +169,7 @@ color: white;</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>images/bird2.png</normaloff>images/bird2.png</iconset>
+      <normaloff>../res/images/bird2.png</normaloff>../res/images/bird2.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -333,10 +342,30 @@ border-radius: 20px;</string>
      </item>
     </layout>
    </widget>
+   <widget class="QPushButton" name="settings">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>20</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 164, 165);
+border: 3px solid #1d54a3;
+color: white;
+border-radius: 35px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
  </widget>
- <resources>
-  <include location="resource.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
