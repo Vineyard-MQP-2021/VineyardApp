@@ -46,7 +46,7 @@ border-radius: 35px;</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>images/hawk1.1.png</normaloff>images/hawk1.1.png</iconset>
+      <normaloff>images/hawk1.png</normaloff>images/hawk1.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -84,7 +84,7 @@ color: white;</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>images/hawk2.1.png</normaloff>images/hawk2.1.png</iconset>
+      <normaloff>images/hawk2.png</normaloff>images/hawk2.png</iconset>
     </property>
     <property name="iconSize">
      <size>
