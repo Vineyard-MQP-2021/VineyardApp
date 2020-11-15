@@ -1,9 +1,0 @@
-<!DOCTYPE RCC>
-<RCC version="1.0">
-    <qresource>
-        <file alis="bird1">res/images/bird1.png</file>
-        <file alis="bird2">res/images/bird2.png</file>
-        <file alis="hawk2">res/images/hawk2.png</file>
-        <file alis="hawk1">res/images/hawk1.png</file>
-    </qresource>
-</RCC>

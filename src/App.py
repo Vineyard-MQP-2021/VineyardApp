@@ -6,5 +6,5 @@ from src.models.APIInfo import APIInfo
 app = QApplication(sys.argv)
 ps = PageSwitcher()
 ps.showmainwindow()
-#api = APIInfo.getInstance()
+api = APIInfo.getInstance()
 app.exec()
