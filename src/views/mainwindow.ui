@@ -181,10 +181,10 @@ color: white;</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>820</x>
-      <y>140</y>
-      <width>231</width>
-      <height>51</height>
+      <x>800</x>
+      <y>120</y>
+      <width>291</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -219,7 +219,7 @@ color: white;</string>
      <rect>
       <x>48</x>
       <y>48</y>
-      <width>761</width>
+      <width>721</width>
       <height>931</height>
      </rect>
     </property>
