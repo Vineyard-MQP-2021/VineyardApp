@@ -1,6 +1,9 @@
 astral==2.2
-numpy==1.19.4
+certifi==2020.11.8
+chardet==3.0.4
+idna==2.10
 PyQt5==5.15.1
 PyQt5-sip==12.8.1
 pytz==2020.4
-timezonefinder==4.5.0
+requests==2.25.0
+urllib3==1.26.2
