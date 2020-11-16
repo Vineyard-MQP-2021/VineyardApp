@@ -252,10 +252,10 @@ border-radius: 35px;</string>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>160</y>
-      <width>368</width>
-      <height>62</height>
+      <x>247</x>
+      <y>141</y>
+      <width>431</width>
+      <height>81</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -329,7 +329,7 @@ border-radius: 35px;</string>
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>36</y>
+      <y>10</y>
       <width>651</width>
       <height>127</height>
      </rect>
