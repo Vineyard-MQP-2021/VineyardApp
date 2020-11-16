@@ -33,14 +33,15 @@ class MainWindow(QMainWindow):
         timer.timeout.connect(self.displayDateTime)
         timer.start()
         self.setWeather(self.api.weather)
+        self.settings.clicked.connect(self.switch)
 
     def displayDateTime(self):
         self.date.setText(datetime.date.today().strftime("%A %b. %d").upper())
         self.time.setText(time.strftime("%H:%M"))
 
-    thunder = lambda self: self.weather.setPixmap(QPixmap(":/thunder"))
+    thunder = lambda self: self.weather.setPixmap(QPixmap(":/storm"))
     rain = lambda self: self.weather.setPixmap(QPixmap(":/rain"))
-    clouds = lambda self: self.weather.setPixmap(QPixmap(":/rain"))
+    cloud = lambda self: self.weather.setPixmap(QPixmap(":/cloud"))
     snow = lambda self: self.weather.setPixmap(QPixmap(":/snow"))
     clear = lambda self, sunrise, sunset, now: self.weather.setPixmap(QPixmap(":/sun")) if (
             sunrise < now < sunset) else self.weather.setPixmap(QPixmap(":/moon"))
@@ -58,10 +59,10 @@ class MainWindow(QMainWindow):
                 "Thunderstorm": self.thunder,
                 "Rain": self.rain,
                 "Drizzle": self.rain,
-                "Clouds": self.clouds,
+                "Clouds": self.cloud,
                 "Snow": self.snow
             }.get(weather_code, self.other_weather)()
 
 
-def switch(self):
-    self.switchPage.emit()
+    def switch(self):
+        self.switchPage.emit()

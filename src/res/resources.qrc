@@ -5,5 +5,14 @@
         <file alias="bird2">images/bird2.png</file>
         <file alias="hawk2">images/hawk2.png</file>
         <file alias="hawk1">images/hawk1.png</file>
+        <file alias="clock">images/clock.png</file>
+        <file alias="cloud">images/cloud.png</file>
+        <file alias="moon">images/moon.png</file>
+        <file alias="rain">images/rain.png</file>
+        <file alias="snow">images/snow.png</file>
+        <file alias="storm">images/storm.png</file>
+        <file alias="sun">images/sun.png</file>
+        <file alias="atmosphere">images/atmosphere.png</file>
+        <file alias="settings">images/settings.png</file>
     </qresource>
 </RCC>
