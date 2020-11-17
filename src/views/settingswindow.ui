@@ -22,7 +22,7 @@
      <rect>
       <x>30</x>
       <y>20</y>
-      <width>141</width>
+      <width>71</width>
       <height>71</height>
      </rect>
     </property>
@@ -44,8 +44,8 @@ border-radius: 35px;</string>
     </property>
     <property name="iconSize">
      <size>
-      <width>100</width>
-      <height>40</height>
+      <width>50</width>
+      <height>25</height>
      </size>
     </property>
    </widget>
