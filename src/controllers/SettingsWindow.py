@@ -1,5 +1,6 @@
 from PyQt5.QtWidgets import QMainWindow, QDesktopWidget
 from PyQt5 import uic, QtCore
+from src.res import resources
 
 
 class SettingsWindow(QMainWindow):
@@ -16,6 +17,7 @@ class SettingsWindow(QMainWindow):
 
         # this centers the app in the middle of the screen
         self.move(QDesktopWidget().availableGeometry().center() - self.frameGeometry().center())
+        self.back.clicked.connect(self.switch)
 
     def switch(self):
         self.switchPage.emit()
