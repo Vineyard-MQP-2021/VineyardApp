@@ -48,6 +48,7 @@ class MainWindow(QMainWindow):
     other_weather = lambda self: self.weather.setPixmap(QPixmap(":/atmosphere"))
 
     def setWeather(self, weather_code):
+        self.temp.setText(str(self.api.temp) + '\u00b0 F')
         if weather_code == "Clear":
             astral_observer = astral.LocationInfo(timezone=self.api.tz, latitude=self.api.lat, longitude=self.api.lon).observer
             sunrise = sun.sunrise(observer=astral_observer, tzinfo=self.api.tz).time()

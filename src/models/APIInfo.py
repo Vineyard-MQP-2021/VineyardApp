@@ -38,6 +38,7 @@ class APIInfo:
             try:
                 weather_response_data = json.loads(weather_api_response)
                 self.weather = weather_response_data["weather"][0]["main"]
+                self.temp = round(weather_response_data["main"]["temp"])
             except ValueError:
                 print("An error occurred")
 
