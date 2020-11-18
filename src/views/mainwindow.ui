@@ -328,9 +328,9 @@ border-radius: 35px;</string>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>30</x>
       <y>10</y>
-      <width>651</width>
+      <width>741</width>
       <height>127</height>
      </rect>
     </property>
@@ -486,7 +486,7 @@ border-radius: 20px;</string>
      <rect>
       <x>760</x>
       <y>45</y>
-      <width>71</width>
+      <width>131</width>
       <height>61</height>
      </rect>
     </property>
