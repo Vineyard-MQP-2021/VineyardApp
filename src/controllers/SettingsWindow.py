@@ -11,7 +11,7 @@ class SettingsWindow(QMainWindow):
         super(SettingsWindow, self).__init__(*args, **kwargs)
 
         # loads the .ui file for this page of the app
-        uic.loadUi('./views/settingswindow.ui', self)
+        uic.loadUi('../views/settingswindow.ui', self)
         self.setFixedWidth(1200)
         self.setFixedHeight(1000)
 

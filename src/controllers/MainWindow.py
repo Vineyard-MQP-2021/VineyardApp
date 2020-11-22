@@ -21,7 +21,7 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__(*args, **kwargs)
 
         # loads the .ui file for this page of the app
-        uic.loadUi('./views/mainwindow.ui', self)
+        uic.loadUi('../views/mainwindow.ui', self)
         self.setFixedWidth(1200)
         self.setFixedHeight(1000)
 
