@@ -1,6 +1,6 @@
-from PyQt5.QtGui import QPixmap, QIcon
+from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import QMainWindow, QDesktopWidget
-from PyQt5 import uic, QtCore, QtGui
+from PyQt5 import uic, QtCore, QtMultimedia
 import datetime
 import time
 from PyQt5.QtCore import QTimer
@@ -23,7 +23,7 @@ class MainWindow(QMainWindow):
         # loads the .ui file for this page of the app
         uic.loadUi('../views/mainwindow.ui', self)
         self.setFixedWidth(1200)
-        self.setFixedHeight(1000)
+        self.setFixedHeight(1200)
 
         # this centers the app in the center of the screen
         self.move(QDesktopWidget().availableGeometry().center() - self.frameGeometry().center())
@@ -34,6 +34,7 @@ class MainWindow(QMainWindow):
         timer.start()
         self.setWeather(self.api.weather)
         self.settings.clicked.connect(self.switch)
+        self.soundButtons.buttonClicked[int].connect(self.playSound)
 
     def displayDateTime(self):
         self.date.setText(datetime.date.today().strftime("%A %b. %d").upper())
@@ -50,7 +51,8 @@ class MainWindow(QMainWindow):
     def setWeather(self, weather_code):
         self.temp.setText(str(self.api.temp) + '\u00b0 F')
         if weather_code == "Clear":
-            astral_observer = astral.LocationInfo(timezone=self.api.tz, latitude=self.api.lat, longitude=self.api.lon).observer
+            astral_observer = astral.LocationInfo(timezone=self.api.tz, latitude=self.api.lat,
+                                                  longitude=self.api.lon).observer
             sunrise = sun.sunrise(observer=astral_observer, tzinfo=self.api.tz).time()
             sunset = sun.sunset(observer=astral_observer, tzinfo=self.api.tz).time()
             now = datetime.datetime.now().time()
@@ -64,6 +66,17 @@ class MainWindow(QMainWindow):
                 "Snow": self.snow
             }.get(weather_code, self.other_weather)()
 
+    def playSound(self, id):
+        for b in self.soundButtons.buttons():
+            if b is self.soundButtons.button(id):
+                name = b.objectName()
+                try:
+                    #TODO: fix the default sound if they don't edit it!!!!
+                    url = '../res/sounds/' + name + '_mod.wav'
+                    QtMultimedia.QSound.play(url)
+                except:
+                    url = '../res/sounds/' + name + '.wav'
+                    QtMultimedia.QSound.play(url)
 
     def switch(self):
         self.switchPage.emit()

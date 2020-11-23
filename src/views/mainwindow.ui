@@ -26,194 +26,6 @@
    <string notr="true">background-color: rgb(163, 231, 220);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="hawk1">
-    <property name="geometry">
-     <rect>
-      <x>870</x>
-      <y>200</y>
-      <width>141</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 164, 165);
-border: 3px solid #1d54a3;
-color: white;
-border-radius: 35px;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset resource="../res/resources.qrc">
-      <normaloff>:/hawk1</normaloff>:/hawk1</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>140</width>
-      <height>100</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="hawk2">
-    <property name="geometry">
-     <rect>
-      <x>870</x>
-      <y>360</y>
-      <width>141</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 164, 165);
-border: 3px solid #1d54a3;
-border-radius: 35px;
-color: white;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset resource="../res/resources.qrc">
-      <normaloff>:/hawk2</normaloff>:/hawk2</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>140</width>
-      <height>100</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="bird1">
-    <property name="geometry">
-     <rect>
-      <x>870</x>
-      <y>530</y>
-      <width>141</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 164, 165);
-border: 3px solid #1d54a3;
-border-radius: 35px;
-color: white;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset resource="../res/resources.qrc">
-      <normaloff>:/bird1</normaloff>:/bird1</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>140</width>
-      <height>100</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="bird2">
-    <property name="geometry">
-     <rect>
-      <x>870</x>
-      <y>690</y>
-      <width>141</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(85, 164, 165);
-border: 3px solid #1d54a3;
-border-radius: 35px;
-color: white;</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="icon">
-     <iconset resource="../res/resources.qrc">
-      <normaloff>:/bird2</normaloff>:/bird2</iconset>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>140</width>
-      <height>100</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>800</x>
-      <y>120</y>
-      <width>291</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>0</width>
-      <height>0</height>
-     </size>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(22, 33, 132);</string>
-    </property>
-    <property name="text">
-     <string>Alert Sounds</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignHCenter|Qt::AlignTop</set>
-    </property>
-   </widget>
    <widget class="QPushButton" name="settings">
     <property name="geometry">
      <rect>
@@ -229,7 +41,6 @@ color: white;</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(85, 164, 165);
 border: 3px solid #1d54a3;
-color: white;
 border-radius: 35px;</string>
     </property>
     <property name="text">
@@ -252,255 +63,422 @@ border-radius: 35px;</string>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>247</x>
-      <y>141</y>
-      <width>431</width>
-      <height>81</height>
+      <x>32</x>
+      <y>13</y>
+      <width>873</width>
+      <height>1051</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <layout class="QVBoxLayout" name="verticalLayout_4">
      <item>
-      <widget class="QLabel" name="label_2">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>60</width>
-         <height>60</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>60</width>
-         <height>60</height>
-        </size>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap resource="../res/resources.qrc">:/clock</pixmap>
-       </property>
-       <property name="scaledContents">
-        <bool>true</bool>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-       </property>
-      </widget>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="date">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(22, 33, 132);</string>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignHCenter|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="weather">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>125</width>
+           <height>125</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>125</width>
+           <height>125</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignHCenter|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="temp">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(22, 33, 132);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
      <item>
-      <widget class="QLabel" name="time">
-       <property name="minimumSize">
-        <size>
-         <width>300</width>
-         <height>40</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>300</width>
-         <height>40</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>15</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(22, 33, 132);</string>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-       </property>
-      </widget>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>250</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../res/resources.qrc">:/clock</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="time">
+         <property name="minimumSize">
+          <size>
+           <width>300</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(22, 33, 132);</string>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>10</y>
-      <width>741</width>
-      <height>127</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <property name="spacing">
-      <number>0</number>
-     </property>
      <item>
-      <widget class="QLabel" name="date">
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>60</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>20</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(22, 33, 132);</string>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignHCenter|Qt::AlignTop</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="weather">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>125</width>
-         <height>125</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>125</width>
-         <height>125</height>
-        </size>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="scaledContents">
-        <bool>true</bool>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignHCenter|Qt::AlignTop</set>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>52</x>
-      <y>217</y>
-      <width>711</width>
-      <height>821</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QFrame" name="frame">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>709</width>
-         <height>657</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>16777215</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(22, 33, 132);
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>709</width>
+           <height>657</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(22, 33, 132);
 border-radius: 20px;</string>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-      </widget>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(22, 33, 132);</string>
+           </property>
+           <property name="text">
+            <string>Alert Sounds</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignTop</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QPushButton" name="mourningdove">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(85, 164, 165);
+border: 3px solid #1d54a3;
+border-radius: 35px;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../res/resources.qrc">
+               <normaloff>:/hawk1</normaloff>:/hawk1</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>140</width>
+               <height>100</height>
+              </size>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">soundButtons</string>
+             </attribute>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="hawk2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(85, 164, 165);
+border: 3px solid #1d54a3;
+border-radius: 35px;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../res/resources.qrc">
+               <normaloff>:/hawk2</normaloff>:/hawk2</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>140</width>
+               <height>100</height>
+              </size>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">soundButtons</string>
+             </attribute>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="bird1">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(85, 164, 165);
+border: 3px solid #1d54a3;
+border-radius: 35px;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../res/resources.qrc">
+               <normaloff>:/bird1</normaloff>:/bird1</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>140</width>
+               <height>100</height>
+              </size>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">soundButtons</string>
+             </attribute>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="bird2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(85, 164, 165);
+border: 3px solid #1d54a3;
+border-radius: 35px;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="../res/resources.qrc">
+               <normaloff>:/bird2</normaloff>:/bird2</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>140</width>
+               <height>100</height>
+              </size>
+             </property>
+             <attribute name="buttonGroup">
+              <string notr="true">soundButtons</string>
+             </attribute>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
      </item>
      <item>
-      <widget class="QLabel" name="label_3">
-       <property name="maximumSize">
-        <size>
-         <width>16777215</width>
-         <height>50</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>15</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(22, 33, 132);</string>
-       </property>
-       <property name="text">
-        <string>Connection Status:</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignHCenter|Qt::AlignTop</set>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="connectionstatus">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">color: rgb(204, 0, 0);</string>
-       </property>
-       <property name="text">
-        <string>Not Connected!</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignHCenter|Qt::AlignTop</set>
-       </property>
-      </widget>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(22, 33, 132);</string>
+         </property>
+         <property name="text">
+          <string>Connection Status:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignHCenter|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="connectionstatus">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(204, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Not Connected!</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignHCenter|Qt::AlignTop</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </item>
     </layout>
-   </widget>
-   <widget class="QLabel" name="temp">
-    <property name="geometry">
-     <rect>
-      <x>760</x>
-      <y>45</y>
-      <width>131</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(22, 33, 132);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
    </widget>
   </widget>
  </widget>
@@ -508,4 +486,7 @@ border-radius: 20px;</string>
   <include location="../res/resources.qrc"/>
  </resources>
  <connections/>
+ <buttongroups>
+  <buttongroup name="soundButtons"/>
+ </buttongroups>
 </ui>
