@@ -65,8 +65,8 @@ border-radius: 35px;</string>
      <rect>
       <x>32</x>
       <y>13</y>
-      <width>873</width>
-      <height>1051</height>
+      <width>971</width>
+      <height>1061</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -234,8 +234,8 @@ border-radius: 35px;</string>
          </property>
          <property name="minimumSize">
           <size>
-           <width>709</width>
-           <height>657</height>
+           <width>800</width>
+           <height>700</height>
           </size>
          </property>
          <property name="maximumSize">
