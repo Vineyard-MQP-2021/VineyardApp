@@ -9,6 +9,7 @@ from src.models.APIInfo import APIInfo
 from src.res import resources
 import astral
 from astral import sun
+import os
 
 
 # controller class for main app window
@@ -70,13 +71,10 @@ class MainWindow(QMainWindow):
         for b in self.soundButtons.buttons():
             if b is self.soundButtons.button(id):
                 name = b.objectName()
-                try:
-                    #TODO: fix the default sound if they don't edit it!!!!
-                    url = '../res/sounds/' + name + '_mod.wav'
-                    QtMultimedia.QSound.play(url)
-                except:
+                url = '../res/sounds/' + name + '_mod.wav'
+                if not os.path.exists(url):
                     url = '../res/sounds/' + name + '.wav'
-                    QtMultimedia.QSound.play(url)
+                QtMultimedia.QSound.play(url)
 
     def switch(self):
         self.switchPage.emit()

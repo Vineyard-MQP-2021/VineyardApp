@@ -16,12 +16,10 @@ class SoundModifier:
 
     def changePitch(self, val, objName):
         attr = objName + '_pitch'
-        #setattr(self, attr, val)
         self.pitches[attr] = val
 
     def changeSpeed(self, val, objName):
         attr = objName + '_speed'
-        #setattr(self, attr, val)
         self.speeds[attr] = val
 
     def applySoundChanges(self):
