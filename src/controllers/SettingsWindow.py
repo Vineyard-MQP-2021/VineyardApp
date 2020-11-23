@@ -42,8 +42,8 @@ class SettingsWindow(QMainWindow):
             if b is self.soundsettingsbuttons.button(id):
                 self.currentButton = self.soundsettingsbuttons.button(id).objectName()
                 b.setStyleSheet("background-color: rgb(85, 164, 165); border: 3px solid #1d54a3; border-radius: 35px;")
-                self.pitch.setValue(getattr(self.soundModifier, self.currentButton + '_pitch'))
-                self.speed.setValue(getattr(self.soundModifier, self.currentButton + '_speed'))
+                self.pitch.setValue(self.soundModifier.pitches[self.currentButton + '_pitch'])
+                self.speed.setValue(self.soundModifier.speeds[self.currentButton + '_speed'])
                 self.pitch.setEnabled(True)
                 self.speed.setEnabled(True)
             else:
