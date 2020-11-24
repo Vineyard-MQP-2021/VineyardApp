@@ -32,8 +32,7 @@ class MainWindow(QMainWindow):
         timer = QTimer(self)
         timer.timeout.connect(self.displayDateTime)
         timer.start()
-        if self.api.bogon is not True:
-            self.setWeather(self.api.weather)
+        self.setWeather(self.api.weather)
         self.settings.clicked.connect(self.switch)
 
     def displayDateTime(self):
