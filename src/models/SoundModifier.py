@@ -13,25 +13,25 @@ class SoundModifier:
         else:
             SoundModifier.__instance = self
 
-    def changePitch(self, val, objName):
-        attr = objName + '_pitch'
+    def changePitch(self, val, name):
+        attr = name + '_pitch'
         self.pitches[attr] = val
 
-    def changeSpeed(self, val, objName):
-        attr = objName + '_speed'
+    def changeSpeed(self, val, name):
+        attr = name + '_speed'
         self.speeds[attr] = val
 
     def applySoundChanges(self, name):
         url = '../res/sounds/' + name + '.wav'
-        self.sound, self.sr = librosa.load(url)
+        self.sound, self.sampling_rate = librosa.load(url)
         attr = name + '_speed'
         speed = self.speeds[attr] / 100
         self.sound = librosa.effects.time_stretch(self.sound, speed)
         attr = name + '_pitch'
         pitch = self.pitches[attr]
-        self.sound = librosa.effects.pitch_shift(self.sound, self.sr, n_steps=pitch)
+        self.sound = librosa.effects.pitch_shift(self.sound, self.sampling_rate, n_steps=pitch)
         new_url = '../res/sounds/' + name + '_mod.wav'
-        sf.write(new_url, self.sound, self.sr)
+        sf.write(new_url, self.sound, self.sampling_rate)
 
     @staticmethod
     def getInstance():
