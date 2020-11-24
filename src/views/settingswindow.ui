@@ -54,7 +54,7 @@ border-radius: 35px;</string>
       <x>160</x>
       <y>170</y>
       <width>871</width>
-      <height>501</height>
+      <height>601</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -531,12 +531,42 @@ QSlider::handle:horizontal {
       <number>25</number>
      </property>
     </widget>
+    <widget class="QPushButton" name="preview">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>490</y>
+       <width>141</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(85, 164, 165);
+border: 3px solid #1d54a3;
+border-radius: 35px;
+color: white;</string>
+     </property>
+     <property name="text">
+      <string>Preview</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QLabel" name="pitchlabel">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>760</y>
+      <x>410</x>
+      <y>840</y>
       <width>141</width>
       <height>61</height>
      </rect>
@@ -548,8 +578,8 @@ QSlider::handle:horizontal {
    <widget class="QLabel" name="speedlabel">
     <property name="geometry">
      <rect>
-      <x>800</x>
-      <y>760</y>
+      <x>790</x>
+      <y>850</y>
       <width>141</width>
       <height>61</height>
      </rect>

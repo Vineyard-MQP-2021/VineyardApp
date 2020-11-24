@@ -30,21 +30,23 @@ class APIInfo:
             self.lat = ip_response_data["loc"].split(",")[0]
             self.lon = ip_response_data["loc"].split(",")[1]
             self.tz = ip_response_data["timezone"]
-        except ValueError:
+        except KeyError:
+            self.bogon = True
             print("An error occurred!")
 
     def getweatherinfo(self):
         # The latitude and longitude from the ipinfo api is used to find the current weather
         # the openweathermap (http://api.openweathermap.org/data/2.5/weather) api is used
-        weather_url = "http://api.openweathermap.org/data/2.5/weather"
-        weather_params = {'lat': self.lat, 'lon': self.lon, 'units': "imperial", "appid": api_keys.weatherAPIKey}
-        weather_api_response = requests.get(url=weather_url, params=weather_params).text
-        try:
-            weather_response_data = json.loads(weather_api_response)
-            self.weather = weather_response_data["weather"][0]["main"]
-            self.temp = round(weather_response_data["main"]["temp"])
-        except ValueError:
-            print("An error occurred")
+        if self.bogon is not True:
+            weather_url = "http://api.openweathermap.org/data/2.5/weather"
+            weather_params = {'lat': self.lat, 'lon': self.lon, 'units': "imperial", "appid": api_keys.weatherAPIKey}
+            weather_api_response = requests.get(url=weather_url, params=weather_params).text
+            try:
+                weather_response_data = json.loads(weather_api_response)
+                self.weather = weather_response_data["weather"][0]["main"]
+                self.temp = round(weather_response_data["main"]["temp"])
+            except ValueError:
+                print("An error occurred")
 
     @staticmethod
     def getInstance():
