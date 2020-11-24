@@ -3,7 +3,6 @@ from PyQt5 import uic, QtCore, QtMultimedia
 
 from src.models.SoundModifier import SoundModifier
 from src.res import resources
-import os
 
 
 class SettingsWindow(QMainWindow):
@@ -25,11 +24,10 @@ class SettingsWindow(QMainWindow):
         self.pitch.valueChanged.connect(self.update)
         self.speed.valueChanged.connect(self.update)
         self.soundsettingsbuttons.buttonClicked[int].connect(self.enableSliders)
-        #self.preview.clicked.connect(self.playSound)
+        self.save.clicked.connect(self.saveSound)
 
     def switch(self):
         self.switchPage.emit()
-        self.soundModifier.applySoundChanges()
 
     def update(self, value):
         if value > 10:
@@ -48,13 +46,11 @@ class SettingsWindow(QMainWindow):
                 self.speed.setValue(self.soundModifier.speeds[self.currentButton + '_speed'])
                 self.pitch.setEnabled(True)
                 self.speed.setEnabled(True)
-                self.preview.setEnabled(True)
+                self.save.setEnabled(True)
             else:
                 b.setStyleSheet("background-color: rgb(85, 164, 165);border: none;border-radius: 35px;")
 
-    def playSound(self):
-        self.soundModifier.applySoundChanges()
+    def saveSound(self):
+        self.soundModifier.applySoundChanges(self.currentButton)
         url = '../res/sounds/' + self.currentButton + '_mod.wav'
-        if not os.path.exists(url):
-            url = '../res/sounds/' + self.currentButton + '.wav'
         QtMultimedia.QSound.play(url)

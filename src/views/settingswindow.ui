@@ -531,14 +531,14 @@ QSlider::handle:horizontal {
       <number>25</number>
      </property>
     </widget>
-    <widget class="QPushButton" name="preview">
+    <widget class="QPushButton" name="save">
      <property name="enabled">
       <bool>false</bool>
      </property>
      <property name="geometry">
       <rect>
-       <x>400</x>
-       <y>490</y>
+       <x>375</x>
+       <y>480</y>
        <width>141</width>
        <height>71</height>
       </rect>
@@ -558,7 +558,7 @@ border-radius: 35px;
 color: white;</string>
      </property>
      <property name="text">
-      <string>Preview</string>
+      <string>Save</string>
      </property>
     </widget>
    </widget>

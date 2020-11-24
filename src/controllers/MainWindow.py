@@ -9,7 +9,6 @@ from src.models.APIInfo import APIInfo
 from src.res import resources
 import astral
 from astral import sun
-import os
 
 
 # controller class for main app window
@@ -36,7 +35,6 @@ class MainWindow(QMainWindow):
         if self.api.bogon is not True:
             self.setWeather(self.api.weather)
         self.settings.clicked.connect(self.switch)
-        self.soundButtons.buttonClicked[int].connect(self.playSound)
 
     def displayDateTime(self):
         self.date.setText(datetime.date.today().strftime("%A %b. %d").upper())
@@ -67,15 +65,6 @@ class MainWindow(QMainWindow):
                 "Clouds": self.cloud,
                 "Snow": self.snow
             }.get(weather_code, self.other_weather)()
-
-    def playSound(self, id):
-        for b in self.soundButtons.buttons():
-            if b is self.soundButtons.button(id):
-                name = b.objectName()
-                url = '../res/sounds/' + name + '_mod.wav'
-                if not os.path.exists(url):
-                    url = '../res/sounds/' + name + '.wav'
-                QtMultimedia.QSound.play(url)
 
     def switch(self):
         self.switchPage.emit()
