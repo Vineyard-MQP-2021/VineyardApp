@@ -22,8 +22,8 @@ class MainWindow(QMainWindow):
 
         # loads the .ui file for this page of the app
         uic.loadUi('../views/mainwindow.ui', self)
-        self.setFixedWidth(1200)
-        self.setFixedHeight(1200)
+        #self.setFixedWidth(1200)
+        #self.setFixedHeight(1200)
 
         # this centers the app in the center of the screen
         self.move(QDesktopWidget().availableGeometry().center() - self.frameGeometry().center())
