@@ -518,6 +518,40 @@ border-radius: 35px;</string>
      </item>
     </layout>
    </widget>
+   <widget class="QPushButton" name="event">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>120</y>
+      <width>81</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 164, 165);
+border: 3px solid #1d54a3;
+border-radius: 35px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="../res/resources.qrc">
+      <normaloff>:/settings</normaloff>:/settings</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources>
