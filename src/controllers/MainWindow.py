@@ -34,6 +34,8 @@ class MainWindow(QMainWindow):
         timer.start()
         self.setWeather(self.api.weather)
         self.settings.clicked.connect(self.switch)
+        # ** Sophie Added
+        self.event.clicked.connect(self.switch)
 
     def displayDateTime(self):
         self.date.setText(datetime.date.today().strftime("%A %b. %d").upper())

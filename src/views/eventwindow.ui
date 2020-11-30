@@ -243,19 +243,6 @@ color: #1d54a3;</string>
      </widget>
     </widget>
    </widget>
-   <widget class="QLabel" name="pitchlabel">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>840</y>
-      <width>141</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QLabel" name="speedlabel">
     <property name="geometry">
      <rect>

@@ -20,3 +20,11 @@ class PageSwitcher:
         self.settingswindow.switchPage.connect(self.showmainwindow)
         self.mainwindow.close()
         self.settingswindow.show()
+
+    # this function shows the event window and close the main window
+    # **Sophie Added
+    def showeventwindow(self):
+        self.eventwindow = EventWindow()
+        self.eventwindow.switchPage.connect(self.showmainwindow)
+        self.mainwindow.close()
+        self.eventwindow.show()
