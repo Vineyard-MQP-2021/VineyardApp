@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1211</width>
-    <height>1324</height>
+    <width>1300</width>
+    <height>1250</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -29,7 +29,7 @@
    <widget class="QPushButton" name="settings">
     <property name="geometry">
      <rect>
-      <x>1100</x>
+      <x>1210</x>
       <y>20</y>
       <width>81</width>
       <height>81</height>
@@ -521,8 +521,8 @@ border-radius: 35px;</string>
    <widget class="QPushButton" name="event">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>120</y>
+      <x>1110</x>
+      <y>20</y>
       <width>81</width>
       <height>81</height>
      </rect>
@@ -540,12 +540,12 @@ border-radius: 35px;</string>
     </property>
     <property name="icon">
      <iconset resource="../res/resources.qrc">
-      <normaloff>:/settings</normaloff>:/settings</iconset>
+      <normaloff>:/event</normaloff>:/event</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>45</width>
-      <height>45</height>
+      <width>55</width>
+      <height>55</height>
      </size>
     </property>
     <property name="flat">

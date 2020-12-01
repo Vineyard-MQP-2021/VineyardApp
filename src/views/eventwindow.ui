@@ -164,6 +164,9 @@ color: #1d54a3;</string>
        <height>431</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
      <property name="widgetResizable">
       <bool>true</bool>
      </property>
@@ -172,13 +175,16 @@ color: #1d54a3;</string>
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>785</width>
-        <height>425</height>
+        <width>791</width>
+        <height>431</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
         <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">border: 3px solid #1d54a3;</string>
+         </property>
          <property name="text">
           <string>Event1</string>
          </property>
@@ -186,6 +192,9 @@ color: #1d54a3;</string>
        </item>
        <item>
         <widget class="QLabel" name="label_12">
+         <property name="styleSheet">
+          <string notr="true">border: 3px solid #1d54a3;</string>
+         </property>
          <property name="text">
           <string>Event2</string>
          </property>
@@ -193,6 +202,9 @@ color: #1d54a3;</string>
        </item>
        <item>
         <widget class="QLabel" name="label_11">
+         <property name="styleSheet">
+          <string notr="true">border: 3px solid #1d54a3;</string>
+         </property>
          <property name="text">
           <string>Event3</string>
          </property>
@@ -200,6 +212,9 @@ color: #1d54a3;</string>
        </item>
        <item>
         <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">border: 3px solid #1d54a3;</string>
+         </property>
          <property name="text">
           <string>Event4</string>
          </property>
@@ -207,6 +222,9 @@ color: #1d54a3;</string>
        </item>
        <item>
         <widget class="QLabel" name="label_6">
+         <property name="styleSheet">
+          <string notr="true">border: 3px solid #1d54a3;</string>
+         </property>
          <property name="text">
           <string>Event5</string>
          </property>
@@ -214,6 +232,9 @@ color: #1d54a3;</string>
        </item>
        <item>
         <widget class="QLabel" name="label_10">
+         <property name="styleSheet">
+          <string notr="true">border: 3px solid #1d54a3;</string>
+         </property>
          <property name="text">
           <string>Event6</string>
          </property>
@@ -221,6 +242,9 @@ color: #1d54a3;</string>
        </item>
        <item>
         <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true">border: 3px solid #1d54a3;</string>
+         </property>
          <property name="text">
           <string>Event7</string>
          </property>
@@ -234,6 +258,9 @@ color: #1d54a3;</string>
            <height>16</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string notr="true">border: 3px solid #1d54a3;</string>
+         </property>
          <property name="text">
           <string>Event8</string>
          </property>
@@ -243,26 +270,10 @@ color: #1d54a3;</string>
      </widget>
     </widget>
    </widget>
-   <widget class="QLabel" name="speedlabel">
-    <property name="geometry">
-     <rect>
-      <x>790</x>
-      <y>850</y>
-      <width>141</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
   </widget>
  </widget>
  <resources>
   <include location="../res/resources.qrc"/>
  </resources>
  <connections/>
- <buttongroups>
-  <buttongroup name="soundsettingsbuttons"/>
- </buttongroups>
 </ui>
