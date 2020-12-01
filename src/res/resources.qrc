@@ -16,5 +16,10 @@
         <file alias="settings">images/settings.png</file>
         <file alias="arrow_white_forward">images/arrow_white_forward.png</file>
         <file alias="arrow_white_backward">images/arrow_white_backward.png</file>
+        <file alias="event">images/event.png</file>
+        <file alias="canto">sounds/canto.wav</file>
+        <file alias="hawk">sounds/hawk.wav</file>
+        <file alias="rthscream">sounds/rthscream.wav</file>
+        <file alias="rthsound">sounds/rthsound.wav</file>
     </qresource>
 </RCC>

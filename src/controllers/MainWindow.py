@@ -14,7 +14,7 @@ from astral import sun
 # controller class for main app window
 class MainWindow(QMainWindow):
     # signal used for switching pages
-    switchPage = QtCore.pyqtSignal()
+    switchPage = QtCore.pyqtSignal(str)
     api = APIInfo.getInstance()
 
     def __init__(self, *args, **kwargs):
@@ -22,8 +22,8 @@ class MainWindow(QMainWindow):
 
         # loads the .ui file for this page of the app
         uic.loadUi('../views/mainwindow.ui', self)
-        #self.setFixedWidth(1200)
-        #self.setFixedHeight(1200)
+        self.setFixedWidth(1300)
+        self.setFixedHeight(1250)
 
         # this centers the app in the center of the screen
         self.move(QDesktopWidget().availableGeometry().center() - self.frameGeometry().center())
@@ -33,7 +33,8 @@ class MainWindow(QMainWindow):
         timer.timeout.connect(self.displayDateTime)
         timer.start()
         self.setWeather(self.api.weather)
-        self.settings.clicked.connect(self.switch)
+        self.settings.clicked.connect(lambda: self.switch("settings"))
+        self.event.clicked.connect(lambda: self.switch("event"))
 
     def displayDateTime(self):
         self.date.setText(datetime.date.today().strftime("%A %b. %d").upper())
@@ -65,5 +66,5 @@ class MainWindow(QMainWindow):
                 "Snow": self.snow
             }.get(weather_code, self.other_weather)()
 
-    def switch(self):
-        self.switchPage.emit()
+    def switch(self, page):
+        self.switchPage.emit(page)
