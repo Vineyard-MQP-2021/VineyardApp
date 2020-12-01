@@ -18,6 +18,7 @@ pyparsing==2.4.7
 PyQt5==5.15.2
 PyQt5-sip==12.8.1
 pytz==2020.4
+pyzmq==20.0.0
 requests==2.25.0
 resampy==0.2.2
 scikit-learn==0.23.2
