@@ -5,21 +5,25 @@ import os
 
 class ZMQMessager:
     __instance = None
+    connected = False
 
     def __init__(self):
         if ZMQMessager.__instance is not None:
             raise Exception("Error")
         else:
             ZMQMessager.__instance = self
-            self.port = "5555"
+            self.stream_port = "5555"
+            self.sound_port = "5556"
             self.context = zmq.Context()
-            self.socket = self.context.socket(zmq.REQ)
-            self.socket.connect("tcp://ip_address:" + self.port)
-            # message = self.socket.recv()
-            # print(message)
+            self.stream_socket = self.context.socket(zmq.REQ)
+            self.stream_socket.connect("tcp://ip:" + self.stream_port)
+            self.sound_socket = self.context.socket(zmq.REQ)
+            self.sound_socket.connect("tcp://ip:" + self.sound_port)
+            self.connected = True
+            self.frame = 0
 
     def sendAudio(self, name):
-        print("sending request...")
+        print("sending file...")
         url = "../res/sounds/" + name + "_mod.wav"
         if os.path.isfile(url):
             f = open(url, "rb")
@@ -29,7 +33,14 @@ class ZMQMessager:
         wave = f.read()
         f.close()
         file = base64.b64encode(wave)
-        self.socket.send(file)
+        self.sound_socket.send(file)
+        message = self.sound_socket.recv_string()
+        print(message)
+
+    def getStream(self):
+        self.stream_socket.send_string("requesting stream....")
+        frame = self.stream_socket.recv()
+        self.frame = base64.b64decode(frame)
 
     @staticmethod
     def getInstance():

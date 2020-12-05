@@ -6,6 +6,8 @@ import time
 from PyQt5.QtCore import QTimer
 
 from src.models.APIInfo import APIInfo
+from src.models.StreamThread import StreamThread
+from src.models.ZMQMessager import ZMQMessager
 from src.res import resources
 import astral
 from astral import sun
@@ -16,6 +18,7 @@ class MainWindow(QMainWindow):
     # signal used for switching pages
     switchPage = QtCore.pyqtSignal(str)
     api = APIInfo.getInstance()
+    videoStream = StreamThread()
 
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
@@ -35,6 +38,7 @@ class MainWindow(QMainWindow):
         self.setWeather(self.api.weather)
         self.settings.clicked.connect(lambda: self.switch("settings"))
         self.event.clicked.connect(lambda: self.switch("event"))
+        self.hawk2.clicked.connect(lambda: self.send("mourningdove"))
 
     def displayDateTime(self):
         self.date.setText(datetime.date.today().strftime("%A %b. %d").upper())
@@ -67,4 +71,12 @@ class MainWindow(QMainWindow):
             }.get(weather_code, self.other_weather)()
 
     def switch(self, page):
+        self.videoStream.stop()
         self.switchPage.emit(page)
+
+    def setStream(self, qp):
+        self.video.setPixmap(qp)
+
+    def send(self, sound):
+        zmq = ZMQMessager.getInstance()
+        zmq.sendAudio(sound)
