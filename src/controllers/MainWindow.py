@@ -38,7 +38,6 @@ class MainWindow(QMainWindow):
         self.setWeather(self.api.weather)
         self.settings.clicked.connect(lambda: self.switch("settings"))
         self.event.clicked.connect(lambda: self.switch("event"))
-        self.hawk2.clicked.connect(lambda: self.send("mourningdove"))
 
     def displayDateTime(self):
         self.date.setText(datetime.date.today().strftime("%A %b. %d").upper())

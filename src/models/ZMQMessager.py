@@ -23,7 +23,6 @@ class ZMQMessager:
             self.frame = 0
 
     def sendAudio(self, name):
-        print("sending file...")
         url = "../res/sounds/" + name + "_mod.wav"
         if os.path.isfile(url):
             f = open(url, "rb")
@@ -35,7 +34,6 @@ class ZMQMessager:
         file = base64.b64encode(wave)
         self.sound_socket.send(file)
         message = self.sound_socket.recv_string()
-        print(message)
 
     def getStream(self):
         self.stream_socket.send_string("requesting stream....")
