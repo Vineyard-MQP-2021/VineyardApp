@@ -6,6 +6,7 @@ import time
 from PyQt5.QtCore import QTimer
 
 from src.models.APIInfo import APIInfo
+from src.models.ConnectionStatusThread import ConnectionStatusThread
 from src.models.StreamThread import StreamThread
 from src.models.ZMQMessager import ZMQMessager
 from src.res import resources
@@ -19,6 +20,7 @@ class MainWindow(QMainWindow):
     switchPage = QtCore.pyqtSignal(str)
     api = APIInfo.getInstance()
     videoStream = StreamThread()
+    connectionThread = ConnectionStatusThread()
 
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
@@ -71,10 +73,19 @@ class MainWindow(QMainWindow):
 
     def switch(self, page):
         self.videoStream.stop()
+        self.connectionThread.stop()
         self.switchPage.emit(page)
 
     def setStream(self, qp):
         self.video.setPixmap(qp)
+
+    def setConnection(self, s):
+        if s == 'c':
+            self.connectionstatus.setStyleSheet("color:green;")
+            self.connectionstatus.setText("Connected!")
+        else:
+            self.connectionstatus.setStyleSheet("color:red;")
+            self.connectionstatus.setText("Not Connected!")
 
     def send(self, sound):
         zmq = ZMQMessager.getInstance()

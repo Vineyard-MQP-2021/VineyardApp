@@ -17,7 +17,9 @@ class PageSwitcher:
             self.eventwindow.close()
         self.mainwindow.show()
         self.mainwindow.videoStream.videoSignal.connect(self.mainwindow.setStream)
+        self.mainwindow.connectionThread.connectionSignal.connect(self.mainwindow.setConnection)
         self.mainwindow.videoStream.start()
+        self.mainwindow.connectionThread.start()
 
     # this function shows a specfied secondary window and closes the main window
     def switchpage(self, page):

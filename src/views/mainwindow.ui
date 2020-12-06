@@ -525,7 +525,7 @@ border-radius: 35px;</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color: rgb(204, 0, 0);</string>
+          <string notr="true">color: red;</string>
          </property>
          <property name="text">
           <string>Not Connected!</string>
