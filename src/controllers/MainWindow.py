@@ -87,6 +87,6 @@ class MainWindow(QMainWindow):
             self.connectionstatus.setStyleSheet("color:red;")
             self.connectionstatus.setText("Not Connected!")
 
-    def send(self, sound):
+    def sendSound(self, sound):
         zmq = ZMQMessager.getInstance()
         zmq.sendAudio(sound)

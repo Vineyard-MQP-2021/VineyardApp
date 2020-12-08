@@ -25,9 +25,7 @@ class ZMQMessager:
             self.connection_socket.setsockopt_string(zmq.SUBSCRIBE, "")
             self.connection_socket.setsockopt(zmq.CONFLATE, 1)
             self.connection_socket.connect("tcp://%s:%s" % (self.client_ip, self.connection_status_port))
-            self.status = True
-            self.frame = 0
-            self.sentWithoutReply = False
+            self.frame = None
 
     def sendAudio(self, name):
         url = "../res/sounds/" + name + "_mod.wav"
