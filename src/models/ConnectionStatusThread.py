@@ -14,7 +14,7 @@ class ConnectionStatusThread(QThread):
     def run(self):
         self.running = True
         while self.running is True:
-            time.sleep(1)
+            time.sleep(0.5)
             s = self.zmq.getConnection()
             self.connectionSignal.emit(s)
 

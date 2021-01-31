@@ -21,5 +21,6 @@
         <file alias="hawk">sounds/hawk.wav</file>
         <file alias="rthscream">sounds/rthscream.wav</file>
         <file alias="rthsound">sounds/rthsound.wav</file>
+        <file alias="vineyard">images/vineyard.png</file>
     </qresource>
 </RCC>

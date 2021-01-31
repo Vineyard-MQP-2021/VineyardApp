@@ -86,6 +86,7 @@ class MainWindow(QMainWindow):
         else:
             self.connectionstatus.setStyleSheet("color:red;")
             self.connectionstatus.setText("Not Connected!")
+            self.video.setPixmap(QPixmap(":/vineyard"))
 
     def sendSound(self, sound):
         zmq = ZMQMessager.getInstance()
