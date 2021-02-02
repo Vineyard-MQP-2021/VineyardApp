@@ -31,7 +31,7 @@ class SettingsWindow(QMainWindow):
 
     def update(self, value):
         if value > 10:
-            self.speedlabel.setText(str(value))
+            self.speedlabel.setText(str(value / 100))
             self.soundModifier.changeSpeed(value, self.currentButton)
         else:
             self.pitchlabel.setText(str(value))
