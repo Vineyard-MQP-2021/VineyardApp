@@ -33,9 +33,17 @@ class SettingsWindow(QMainWindow):
         if value > 10:
             self.speedlabel.setText(str(value / 100))
             self.soundModifier.changeSpeed(value, self.currentButton)
+            percent = ((value - 25) / 175)
+            xval = self.speed.pos().x() + (471 * percent)
+            yval = self.speed.pos().y() + 30
+            self.speedlabel.move(xval, yval)
         else:
             self.pitchlabel.setText(str(value))
             self.soundModifier.changePitch(value, self.currentButton)
+            percent = ((value - -10) / 20)
+            xval = self.pitch.pos().x() + (471 * percent)
+            yval = self.pitch.pos().y() + 30
+            self.pitchlabel.move(xval, yval)
 
     def enableSliders(self, id):
         for b in self.soundsettingsbuttons.buttons():

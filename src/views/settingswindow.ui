@@ -564,8 +564,8 @@ color: white;</string>
     <widget class="QLabel" name="pitchlabel">
      <property name="geometry">
       <rect>
-       <x>180</x>
-       <y>280</y>
+       <x>470</x>
+       <y>320</y>
        <width>51</width>
        <height>51</height>
       </rect>
@@ -580,10 +580,10 @@ color: white;</string>
     <widget class="QLabel" name="speedlabel">
      <property name="geometry">
       <rect>
-       <x>180</x>
-       <y>400</y>
+       <x>440</x>
+       <y>440</y>
        <width>51</width>
-       <height>51</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
