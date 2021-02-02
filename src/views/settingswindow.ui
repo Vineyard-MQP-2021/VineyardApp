@@ -567,7 +567,7 @@ color: white;</string>
        <x>470</x>
        <y>320</y>
        <width>51</width>
-       <height>51</height>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
