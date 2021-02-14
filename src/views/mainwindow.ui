@@ -331,7 +331,7 @@ border-radius: 20px;</string>
          <item>
           <layout class="QVBoxLayout" name="verticalLayout_3">
            <item>
-            <widget class="QPushButton" name="mourningdove">
+            <widget class="QPushButton" name="hawk1">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                <horstretch>0</horstretch>
@@ -399,7 +399,7 @@ border-radius: 35px;</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="bird1">
+            <widget class="QPushButton" name="hawk3">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                <horstretch>0</horstretch>
@@ -433,7 +433,7 @@ border-radius: 35px;</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="bird2">
+            <widget class="QPushButton" name="hawk4">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                <horstretch>0</horstretch>

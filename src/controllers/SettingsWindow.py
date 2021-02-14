@@ -1,6 +1,5 @@
 from PyQt5.QtWidgets import QMainWindow, QDesktopWidget
-from PyQt5 import uic, QtCore, QtMultimedia
-
+from PyQt5 import uic, QtCore
 from src.models.SoundModifier import SoundModifier
 from src.res import resources
 
@@ -27,6 +26,7 @@ class SettingsWindow(QMainWindow):
         self.save.clicked.connect(self.saveSound)
 
     def switch(self):
+        self.saved.setText("")
         self.switchPage.emit()
 
     def update(self, value):
@@ -46,6 +46,7 @@ class SettingsWindow(QMainWindow):
             self.pitchlabel.move(xval, yval)
 
     def enableSliders(self, id):
+        self.saved.setText("")
         for b in self.soundsettingsbuttons.buttons():
             if b is self.soundsettingsbuttons.button(id):
                 self.currentButton = self.soundsettingsbuttons.button(id).objectName()
@@ -60,5 +61,5 @@ class SettingsWindow(QMainWindow):
 
     def saveSound(self):
         self.soundModifier.applySoundChanges(self.currentButton)
-        url = '../res/sounds/' + self.currentButton + '_mod.wav'
-        QtMultimedia.QSound.play(url)
+        self.saved.setText("Saved!")
+        self.saved.setStyleSheet("color:green; border:none;")

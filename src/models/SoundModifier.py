@@ -4,8 +4,8 @@ import soundfile as sf
 
 class SoundModifier:
     __instance = None
-    pitches = {'mourningdove_pitch': 0, 'hawk2_pitch': 0, 'bird1_pitch': 0, 'bird2_pitch': 0}
-    speeds = {'mourningdove_speed': 100, 'hawk2_speed': 100, 'bird1_speed': 100, 'bird2_speed': 100}
+    pitches = {'hawk1_pitch': 0, 'hawk2_pitch': 0, 'hawk3_pitch': 0, 'hawk4_pitch': 0}
+    speeds = {'hawk1_speed': 100, 'hawk2_speed': 100, 'hawk3_speed': 100, 'hawk4_speed': 100}
 
     def __init__(self):
         if SoundModifier.__instance is not None:

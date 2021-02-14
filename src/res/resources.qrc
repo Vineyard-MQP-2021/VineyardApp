@@ -17,10 +17,10 @@
         <file alias="arrow_white_forward">images/arrow_white_forward.png</file>
         <file alias="arrow_white_backward">images/arrow_white_backward.png</file>
         <file alias="event">images/event.png</file>
-        <file alias="canto">sounds/canto.wav</file>
-        <file alias="hawk">sounds/hawk.wav</file>
-        <file alias="rthscream">sounds/rthscream.wav</file>
-        <file alias="rthsound">sounds/rthsound.wav</file>
+        <file alias="hawk1sound">sounds/hawk1.wav</file>
+        <file alias="hawk2sound">sounds/hawk2.wav</file>
+        <file alias="hawk3sound">sounds/hawk3.wav</file>
+        <file alias="hawk4sound">sounds/hawk4.wav</file>
         <file alias="vineyard">images/vineyard.png</file>
     </qresource>
 </RCC>

@@ -15,10 +15,10 @@ class App:
         sys.exit(self.app.exec())
 
     def deleteFiles(self):
-        os.remove("../res/sounds/mourningdove_mod.wav")
+        os.remove("../res/sounds/hawk1_mod.wav")
         os.remove("../res/sounds/hawk2_mod.wav")
-        os.remove("../res/sounds/bird1_mod.wav")
-        os.remove("../res/sounds/bird2_mod.wav")
+        os.remove("../res/sounds/hawk3_mod.wav")
+        os.remove("../res/sounds/hawk4_mod.wav")
 
 
 app = App()

@@ -113,7 +113,7 @@ color: #1d54a3;</string>
       <string>Sound</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="mourningdove">
+    <widget class="QPushButton" name="hawk1">
      <property name="geometry">
       <rect>
        <x>250</x>
@@ -226,7 +226,7 @@ border-radius: 35px;</string>
       <string notr="true">soundsettingsbuttons</string>
      </attribute>
     </widget>
-    <widget class="QPushButton" name="bird1">
+    <widget class="QPushButton" name="hawk3">
      <property name="geometry">
       <rect>
        <x>530</x>
@@ -272,7 +272,7 @@ border-radius: 35px;</string>
       <string notr="true">soundsettingsbuttons</string>
      </attribute>
     </widget>
-    <widget class="QPushButton" name="bird2">
+    <widget class="QPushButton" name="hawk4">
      <property name="geometry">
       <rect>
        <x>670</x>
@@ -584,6 +584,22 @@ color: white;</string>
        <y>440</y>
        <width>51</width>
        <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="saved">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>560</y>
+       <width>111</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">

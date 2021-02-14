@@ -40,6 +40,10 @@ class MainWindow(QMainWindow):
         self.setWeather(self.api.weather)
         self.settings.clicked.connect(lambda: self.switch("settings"))
         self.event.clicked.connect(lambda: self.switch("event"))
+        self.hawk1.clicked.connect(lambda: self.sendSound("hawk1"))
+        self.hawk2.clicked.connect(lambda: self.sendSound("hawk2"))
+        self.hawk3.clicked.connect(lambda: self.sendSound("hawk3"))
+        self.hawk4.clicked.connect(lambda: self.sendSound("hawk4"))
 
     def displayDateTime(self):
         self.date.setText(datetime.date.today().strftime("%A %b. %d").upper())
