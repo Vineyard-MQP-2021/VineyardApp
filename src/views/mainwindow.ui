@@ -419,7 +419,7 @@ border-radius: 35px;</string>
              </property>
              <property name="icon">
               <iconset resource="../res/resources.qrc">
-               <normaloff>:/bird1</normaloff>:/bird1</iconset>
+               <normaloff>:/hawk3</normaloff>:/hawk3</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -453,7 +453,7 @@ border-radius: 35px;</string>
              </property>
              <property name="icon">
               <iconset resource="../res/resources.qrc">
-               <normaloff>:/bird2</normaloff>:/bird2</iconset>
+               <normaloff>:/hawk4</normaloff>:/hawk4</iconset>
              </property>
              <property name="iconSize">
               <size>
