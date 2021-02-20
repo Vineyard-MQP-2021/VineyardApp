@@ -18,7 +18,7 @@ from astral import sun
 class MainWindow(QMainWindow):
     # signal used for switching pages
     switchPage = QtCore.pyqtSignal(str)
-    api = APIInfo.getInstance()
+    #api = APIInfo.getInstance()
     videoStream = StreamThread()
     connectionThread = ConnectionStatusThread()
 
@@ -37,7 +37,7 @@ class MainWindow(QMainWindow):
         timer = QTimer(self)
         timer.timeout.connect(self.displayDateTime)
         timer.start()
-        self.setWeather(self.api.weather)
+        #self.setWeather(self.api.weather)
         self.settings.clicked.connect(lambda: self.switch("settings"))
         self.event.clicked.connect(lambda: self.switch("event"))
         self.hawk1.clicked.connect(lambda: self.sendSound("hawk1"))

@@ -22,3 +22,14 @@ class EventWindow(QMainWindow):
 
     def switch(self):
         self.switchPage.emit()
+
+
+    """self.back.clicked.connect(lambda: self.showmodal())
+    def showmodal(self):
+        d = QDialog()
+        d.setFixedWidth(1000)
+        d.setFixedHeight(960)
+        pic = QLabel("", d)
+        pic.setPixmap(QPixmap(":/vineyard"))
+        d.setWindowTitle("Dialog")
+        d.exec_()"""
