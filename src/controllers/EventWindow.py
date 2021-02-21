@@ -1,10 +1,9 @@
 from PyQt5.QtGui import QPixmap
-from PyQt5.QtWidgets import QMainWindow, QDesktopWidget, QTableWidgetItem, QDialog, QLabel, QMessageBox, QHeaderView
+from PyQt5.QtWidgets import QMainWindow, QDesktopWidget, QTableWidgetItem, QLabel, QMessageBox, QHeaderView
 from PyQt5 import uic, QtCore
 from pymongo import MongoClient
 import base64
 
-from src.models.SoundModifier import SoundModifier
 from src.res import resources
 from src import api_keys
 
