@@ -45,7 +45,7 @@ class EventWindow(QMainWindow):
         qp.loadFromData(byteString)
         pic.setPixmap(qp)
         box.setIconPixmap(qp)
-        box.setWindowTitle("This was the image captured!")
+        box.setWindowTitle("This image was captured!")
         box.exec_()
 
     def refreshPage(self):
