@@ -16,7 +16,9 @@
 #### note: You will also need to create API keys to use fetch the current weather. Also needed is a MongoDB free cluster to store database detection information. These will need to be saved a file called 'api_keys.py', which is to be placed inside the 'src' folder. the format of this file is as follows:
 
 ipAPIKey = "{IP api key}"
+
 weatherAPIKey = "{weather api key}"
+
 mongodb = "{Database access string}"
 
 #### good luck :)
