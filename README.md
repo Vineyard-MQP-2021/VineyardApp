@@ -2,7 +2,7 @@
 
 ## This app was created as a part of the Vineyard Pest Deterrence System MQP completed in 2021 by Kenneth Desrosiers and Sophie Antoniou.
 
-###How to get started (make sure you already have Python installed!!):
+### How to get started (make sure you already have Python installed!!):
 
 #### note: make sure to download PyCharm if you don't already have it. A free Community version can be found here: https://www.jetbrains.com/pycharm/
 
