@@ -4,11 +4,13 @@ from src.models.SoundModifier import SoundModifier
 from src.res import resources
 
 
+# this class is responsible for controlling the sound settings page
 class SettingsWindow(QMainWindow):
     # signal used for switching pages
     switchPage = QtCore.pyqtSignal()
     soundModifier = SoundModifier.getInstance()
 
+    # This constructor connects all of the buttons and sliders to functions
     def __init__(self, *args, **kwargs):
         super(SettingsWindow, self).__init__(*args, **kwargs)
 
@@ -25,10 +27,12 @@ class SettingsWindow(QMainWindow):
         self.soundsettingsbuttons.buttonClicked[int].connect(self.enableSliders)
         self.save.clicked.connect(self.saveSound)
 
+    # this function switches pages when the back button is pressed
     def switch(self):
         self.saved.setText("")
         self.switchPage.emit()
 
+    # this function updates the speed and pitch sliders when moved and moves their labels
     def update(self, value):
         if value > 10:
             self.speedlabel.setText(str(value / 100))
@@ -45,6 +49,7 @@ class SettingsWindow(QMainWindow):
             yval = self.pitch.pos().y() + 30
             self.pitchlabel.move(xval, yval)
 
+    # this function enables the sliders only AFTER a sound button is selected
     def enableSliders(self, id):
         self.saved.setText("")
         for b in self.soundsettingsbuttons.buttons():
@@ -59,6 +64,7 @@ class SettingsWindow(QMainWindow):
             else:
                 b.setStyleSheet("background-color: rgb(85, 164, 165);border: none;border-radius: 35px;")
 
+    # this function applies the changes to a sound file when the save button is pressed
     def saveSound(self):
         self.soundModifier.applySoundChanges(self.currentButton)
         self.saved.setText("Saved!")

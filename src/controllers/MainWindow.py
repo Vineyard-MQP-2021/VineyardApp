@@ -1,6 +1,6 @@
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import QMainWindow, QDesktopWidget
-from PyQt5 import uic, QtCore, QtMultimedia
+from PyQt5 import uic, QtCore
 import datetime
 import time
 from PyQt5.QtCore import QTimer
@@ -15,12 +15,17 @@ from astral import sun
 
 
 # controller class for main app window
+
 class MainWindow(QMainWindow):
     # signal used for switching pages
     switchPage = QtCore.pyqtSignal(str)
+
     api = APIInfo.getInstance()
     videoStream = StreamThread()
     connectionThread = ConnectionStatusThread()
+
+    """This is the constructor that hooks up functionality to
+    all of the buttons and sets the current weather"""
 
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
@@ -45,10 +50,12 @@ class MainWindow(QMainWindow):
         self.hawk3.clicked.connect(lambda: self.sendSound("hawk3"))
         self.hawk4.clicked.connect(lambda: self.sendSound("hawk4"))
 
+    # this function sets the correct date and time on the page
     def displayDateTime(self):
         self.date.setText(datetime.date.today().strftime("%A %b. %d").upper())
         self.time.setText(time.strftime("%H:%M"))
 
+    # these are lambda functions that set the correct weather icon depending on the current weather
     thunder = lambda self: self.weather.setPixmap(QPixmap(":/storm"))
     rain = lambda self: self.weather.setPixmap(QPixmap(":/rain"))
     cloud = lambda self: self.weather.setPixmap(QPixmap(":/cloud"))
@@ -56,6 +63,9 @@ class MainWindow(QMainWindow):
     clear = lambda self, sunrise, sunset, now: self.weather.setPixmap(QPixmap(":/sun")) if (
             sunrise < now < sunset) else self.weather.setPixmap(QPixmap(":/moon"))
     other_weather = lambda self: self.weather.setPixmap(QPixmap(":/atmosphere"))
+
+    """this function uses the weather lambdas to compare the weather API info to the lambda
+    values and set the weather accordingly"""
 
     def setWeather(self, weather_code):
         self.temp.setText(str(self.api.temp) + '\u00b0 F')
@@ -75,14 +85,17 @@ class MainWindow(QMainWindow):
                 "Snow": self.snow
             }.get(weather_code, self.other_weather)()
 
+    # this function switches the page and stops the connection status and video stream threads
     def switch(self, page):
         self.videoStream.stop()
         self.connectionThread.stop()
         self.switchPage.emit(page)
 
+    # this function sets the stream to the newest received stream frame
     def setStream(self, qp):
         self.video.setPixmap(qp)
 
+    # this function sets the connection status to the latest receieved connection status
     def setConnection(self, s):
         if s == 'c':
             self.connectionstatus.setStyleSheet("color:green;")
@@ -92,6 +105,7 @@ class MainWindow(QMainWindow):
             self.connectionstatus.setText("Not Connected!")
             self.video.setPixmap(QPixmap(":/vineyard"))
 
+    # this function sends modified sound files to the Raspberry Pi when the buttons are pressed
     def sendSound(self, sound):
         zmq = ZMQMessager.getInstance()
         zmq.sendAudio(sound)

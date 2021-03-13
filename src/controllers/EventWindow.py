@@ -8,9 +8,14 @@ from src.res import resources
 from src import api_keys
 
 
+# this class is the controller for the event window page
+
 class EventWindow(QMainWindow):
     # signal used for switching pages
     switchPage = QtCore.pyqtSignal()
+
+    """This is the constructor that hooks up functionality to
+    all of the buttons and database table"""
 
     def __init__(self, *args, **kwargs):
         super(EventWindow, self).__init__(*args, **kwargs)
@@ -23,6 +28,7 @@ class EventWindow(QMainWindow):
 
         # this centers the app in the middle of the screen
         self.move(QDesktopWidget().availableGeometry().center() - self.frameGeometry().center())
+
         self.back.clicked.connect(self.switch)
         self.event_table.horizontalHeader().setStretchLastSection(True)
         self.event_table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
@@ -32,11 +38,13 @@ class EventWindow(QMainWindow):
         self.refresh.clicked.connect(lambda: self.refreshPage())
         self.refreshPage()
 
+    # runs showModal() for the appropriate row when a cell is clicked
     def cellClicked(self):
         row = self.event_table.currentRow()
         if row in self.imageDict:
             self.showModal(self.imageDict[row])
 
+    # decodes detection image from Base64 string and shows it in a modal
     def showModal(self, b64):
         byteString = base64.b64decode(b64)
         box = QMessageBox()
@@ -48,6 +56,7 @@ class EventWindow(QMainWindow):
         box.setWindowTitle("This image was captured!")
         box.exec_()
 
+    # fetches detection log information from a MongoDB database
     def refreshPage(self):
         self.event_table.setRowCount(1)
         client = MongoClient(api_keys.mongodb)
@@ -60,5 +69,6 @@ class EventWindow(QMainWindow):
             self.event_table.setItem(rowPosition, 1, QTableWidgetItem(x['time']))
             self.imageDict[rowPosition] = x['b64']
 
+    # switches pages with the back button is pressed
     def switch(self):
         self.switchPage.emit()

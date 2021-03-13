@@ -3,11 +3,16 @@ from src.controllers.MainWindow import MainWindow
 from src.controllers.SettingsWindow import SettingsWindow
 
 
+# this class is responsible for all page switching
 class PageSwitcher:
+
+    # This constructor does not do anything
     def __init__(self):
         pass
 
-    # this function shows the main window and closes the settings window if it exists
+    """this function shows the main window and closes the settings or event window if it exists.
+    it also starts the connection status and video stream threads"""
+
     def showmainwindow(self):
         self.mainwindow = MainWindow()
         self.mainwindow.switchPage.connect(self.switchpage)
