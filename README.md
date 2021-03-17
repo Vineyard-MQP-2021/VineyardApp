@@ -2,14 +2,14 @@
 
 ## This app was created as a part of the Vineyard Pest Deterrence System MQP completed in 2021 by Kenneth Desrosiers and Sophie Antoniou.
 
-### How to get started (make sure you already have Python installed!!):
+### How to get started (make sure you already have atleast Python 3.7 installed!!):
 
 #### note: make sure to download PyCharm if you don't already have it. A free Community version can be found here: https://www.jetbrains.com/pycharm/
 
 #### 1. clone the repository
 #### 2. in the terminal or command line, navigate to the 'src' folder of the project
 #### note: it's best to perform the following after setting up a virtual environment. This will contain all of the packages within the project. Not mandatory but recommended. More info can be found here: https://docs.python.org/3/tutorial/venv.html
-#### 3. run `pip install -r requirements.txt` to install the required packages
+#### 3. run `pip install -r requirements.txt` to install the required packages (try pip3 if pip does not work).
 #### 4. navigate to the 'src/res' folder
 #### 5. run `pyrcc5 -o resources.py resources.qrc` to build the dependencies for the resources (sounds, images)
 
